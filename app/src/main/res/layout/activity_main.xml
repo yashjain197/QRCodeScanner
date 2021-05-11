@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/textGenerate"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:lines="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/ic_baseline_text_fields_24"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:hint="Enter text"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"/>
+
+    <Button
+        android:id="@+id/GenerateQr"
+        android:layout_width="309dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="173dp"
+        android:background="@drawable/edit_button"
+        android:elevation="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Generate QR code"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/qrImage"
+        android:layout_width="338dp"
+        android:layout_height="304dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="149dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/ic_baseline_qr_code_24"
+        tools:ignore="InvalidId" />
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/edit_button"
+        android:elevation="20dp"
+        android:text="Scan"
+
+        android:textColor="@color/white" />
+
+</RelativeLayout>
